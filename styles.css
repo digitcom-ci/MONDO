@@ -469,9 +469,12 @@ header {
         text-align: center;
         background: #fffdf7; /* blanc cassé */
     }
-    .specialties-content .logo-special {
-        max-width: 350px;
+    .specialties-content {
+        max-width: 600px;
         margin-bottom: 15px;
+    }
+    .logo-special {
+        width: 100px;
     }
     .specialties p {
         font-size: 14px;
@@ -494,7 +497,6 @@ header {
         border-radius: 12px;
         overflow: hidden;
         width: 100%;
-        mIN-width: 500px; /* largeur max */
         box-shadow: 0 6px 16px rgba(0,0,0,0.12);
         text-decoration: none;
         color: inherit;
@@ -955,3 +957,4 @@ header {
         justify-content: center;
     }
 }
+
