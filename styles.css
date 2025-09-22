@@ -504,7 +504,7 @@ header {
     }
     /* Image à gauche */
     .card img {
-        width: 35%; /* prend 40% de la carte */
+        width: 25%; /* prend 40% de la carte */
         height: 100%;
         aspect-ratio: 1 / 1; /* carré */
         object-fit: cover;
