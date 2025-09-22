@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Club | Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo du restaurant" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="reservation.html">Réservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+            
+    <div class="container">
+        <h1>Réservez votre table</h1>
+        <form id="reservation-form" action="reservation.php" method="POST">
+            <label for="name">Nom et prénom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Heure :</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Nombre de personnes :</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6 ou plus</option>
+            </select>
+
+            <h4>
+               Après avoir cliqué sur le bouton "Réserver", vous serez redirigé vers whatsapp, veuillez envoyer votre formulaire pour que nous puissions vous confirmer votre réservation.
+            </h4>
+
+            <button type="submit">Réserver</button>
+        </form>
+
+        <p id="confirmation-message" class="hidden">Votre réservation a été envoyée !</p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Adresse : Abidjan, Côte d'Ivoire</p>
+                <p>📞 Téléphone : +225 01 XX XX XX XX</p>
+                <p>✉️ Email : contact@monrestaurant.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horaires</h3>
+                <p>Lundi - Vendredi : 11h - 22h</p>
+                <p>Samedi - Dimanche : 12h - 23h</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Le Club. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>
