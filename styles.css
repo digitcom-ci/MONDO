@@ -480,6 +480,7 @@ header {
     /* === Conteneur des cartes === */
     .specialty-items {
         padding: 15px;
+        margin-bottom: 20px;
         width: 410px;
         display: grid;
         grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
@@ -666,6 +667,7 @@ header {
 /* Responsive */
 @media (max-width: 992px) {
     .delivery-section {
+        background: #FFF;
         flex-direction: column;
         text-align: center;
         display: flex;
@@ -794,7 +796,7 @@ header {
 @media (max-width: 1024px) {
     .reviews {
         text-align: center;
-        padding: 0px 20px;
+        padding: 20px 20px;
         margin-top: -100px;
     }
 
@@ -899,7 +901,7 @@ header {
     font-size: 14px;
     color: #aaa;
     border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 16px;
+    padding-top: 15px;
 }
 
 /* Responsive */
