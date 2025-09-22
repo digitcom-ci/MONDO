@@ -493,8 +493,7 @@ header {
         background-color: #fff;
         border-radius: 12px;
         overflow: hidden;
-        width: 100%;
-        max-width: 500px; /* largeur max */
+        width: 300px; /* largeur max */
         box-shadow: 0 6px 16px rgba(0,0,0,0.12);
         text-decoration: none;
         color: inherit;
