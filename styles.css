@@ -512,7 +512,7 @@ header {
     /* Contenu à droite */
     .card-body {
         flex: 1;
-        padding: 15px;
+        padding: 25px;
         text-align: left;
         margin-left: 30px;
     }
