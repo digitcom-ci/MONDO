@@ -559,7 +559,6 @@ header {
 
 
 .image-row {
-    background-color: #f8f5f0; /* blanc cassé */
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -577,6 +576,16 @@ header {
 }
 /* Responsive pour mobile */
 @media (max-width: 768px) {
+    .image-row {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .image-container {
+        display: flex;
+        gap: 10px; /* espace entre les images */
+        flex-wrap: wrap; /* passe à la ligne si l’écran est trop petit */
+    }
     .image-container img {
         width: 40%; /* une image par ligne */
         height: auto;
