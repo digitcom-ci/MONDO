@@ -664,9 +664,14 @@ header {
 /* Responsive */
 @media (max-width: 992px) {
     .delivery-section {
-        background: #000;
         flex-direction: column;
         text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        flex-wrap: wrap;
     }
     .delivery-column {
         flex: 1 1 300px;
@@ -699,7 +704,7 @@ header {
     }
     /* Texte et bouton à droite */
     .delivery-right {
-        margin-top: -300px;
+        margin-top: -250px;
     }
     .delivery-right h2 {
         font-size: 26px;
@@ -790,7 +795,7 @@ header {
     /* Section avis client */
     .reviews {
         text-align: center;
-        padding: 50px 20px;
+        padding: 20px 20px;
         background: #f8f8f8;
     }
 
