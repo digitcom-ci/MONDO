@@ -694,7 +694,7 @@ header {
     }
     /* Image centrale */
     .delivery-center img {
-        width: 100%;
+        width: 60%;
         max-width: 350px;
         margin-top: -200px;
         aspect-ratio: 1 / 1;
@@ -702,7 +702,7 @@ header {
     }
     /* Texte et bouton à droite */
     .delivery-right {
-        margin-top: -100px;
+        margin-top: -200px;
     }
     .delivery-right h2 {
         font-size: 26px;
