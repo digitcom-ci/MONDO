@@ -683,10 +683,10 @@ header {
         color: #555;
     }
     .delivery-left ul li {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 5px;
     }
     .delivery-left ul li i {
         color: #25A63C;
@@ -696,13 +696,13 @@ header {
     .delivery-center img {
         width: 60%;
         max-width: 350px;
-        margin-top: -200px;
+        margin-top: -300px;
         aspect-ratio: 1 / 1;
         object-fit: cover;
     }
     /* Texte et bouton à droite */
     .delivery-right {
-        margin-top: -200px;
+        margin-top: -500px;
     }
     .delivery-right h2 {
         font-size: 26px;
