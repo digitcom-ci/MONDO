@@ -467,14 +467,10 @@ header {
     .specialties {
         padding: 10px;
         text-align: center;
-        background: #fffdf7; /* blanc cassé */
     }
-    .specialties-content {
-        max-width: 600px;
-        margin-bottom: 15px;
-    }
-    .logo-special {
+    .specialties-content .logo-special {
         width: 100px;
+        margin-bottom: 5px;
     }
     .specialties p {
         font-size: 14px;
@@ -483,9 +479,10 @@ header {
     }
     /* === Conteneur des cartes === */
     .specialty-items {
+        width: 400px;
         display: grid;
         grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
-        gap: 20px;
+        gap: 10px;
         justify-items: center;
     }
     /* === Carte pizza cliquable === */
@@ -497,6 +494,7 @@ header {
         border-radius: 12px;
         overflow: hidden;
         width: 100%;
+        height: 100px;
         box-shadow: 0 6px 16px rgba(0,0,0,0.12);
         text-decoration: none;
         color: inherit;
@@ -510,8 +508,9 @@ header {
     }
     /* Image à gauche */
     .card img {
-        width: 30%; /* prend 40% de la carte */
-        height: 100%;
+        width: 25%; /* prend 40% de la carte */
+        margin-left: 15px;
+        height: auto;
         aspect-ratio: 1 / 1; /* carré */
         object-fit: cover;
     }
@@ -957,4 +956,3 @@ header {
         justify-content: center;
     }
 }
-
