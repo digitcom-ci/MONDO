@@ -245,7 +245,7 @@ header {
 
     /* Section Hero */
     .hero {
-        width: 100%;
+        width: 100vw;
         height: auto;
         background: url('images/covermini.png') center/cover no-repeat;
         display: flex;
