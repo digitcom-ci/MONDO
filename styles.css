@@ -504,7 +504,7 @@ header {
     }
     /* Image à gauche */
     .card img {
-        width: 25%; /* prend 40% de la carte */
+        width: 20%; /* prend 40% de la carte */
         height: 100%;
         aspect-ratio: 1 / 1; /* carré */
         object-fit: cover;
@@ -512,7 +512,7 @@ header {
     /* Contenu à droite */
     .card-body {
         flex: 1;
-        padding: 25px;
+        padding: 20px;
         text-align: left;
         margin-left: 30px;
     }
