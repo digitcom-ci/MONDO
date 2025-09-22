@@ -664,6 +664,7 @@ header {
 /* Responsive */
 @media (max-width: 992px) {
     .delivery-section {
+        background: #000;
         flex-direction: column;
         text-align: center;
     }
@@ -690,15 +691,15 @@ header {
     }
     /* Image centrale */
     .delivery-center img {
-        width: 100%;
+        width: 70%;
         max-width: 350px;
-        margin-top: -200px;
+        margin-top: -500px;
         aspect-ratio: 1 / 1;
         object-fit: cover;
     }
     /* Texte et bouton à droite */
     .delivery-right {
-        margin-top: -100px;
+        margin-top: -300px;
     }
     .delivery-right h2 {
         font-size: 26px;
