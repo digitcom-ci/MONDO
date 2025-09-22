@@ -479,8 +479,8 @@ header {
     }
     /* === Conteneur des cartes === */
     .specialty-items {
-        margin-left: -20px;
-        width: 450px;
+        padding: 15px;
+        width: 410px;
         display: grid;
         grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
         gap: 10px;
