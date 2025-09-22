@@ -560,7 +560,7 @@ header {
 
 .image-row {
     background-color: #f8f5f0; /* blanc cassé */
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
