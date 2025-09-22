@@ -795,6 +795,7 @@ header {
 /* Responsive pour tablette (2 avis par ligne) */
 @media (max-width: 1024px) {
     .reviews {
+        background: #FFF;
         text-align: center;
         padding: 20px 20px;
         margin-top: -100px;
