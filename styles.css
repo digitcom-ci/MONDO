@@ -788,8 +788,7 @@ header {
     /* Section avis client */
     .reviews {
         text-align: center;
-        padding: 50px 20px;
-        background: #f8f8f8;
+        padding: 0px 20px;
     }
 
     /* Conteneur des avis avec scroll */
