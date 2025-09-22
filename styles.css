@@ -465,7 +465,7 @@ header {
 @media (max-width: 768px) {
     /* === Section spécialités mobile === */
     .specialties {
-        padding: 10px;
+        padding: 0px;
         text-align: center;
         background: #fffdf7; /* blanc cassé */
     }
