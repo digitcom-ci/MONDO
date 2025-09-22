@@ -471,6 +471,7 @@ header {
     .specialties-content .logo-special {
         width: 100px;
         margin-bottom: 5px;
+        margin-top: 10px;
     }
     .specialties p {
         font-size: 14px;
@@ -920,3 +921,4 @@ header {
         justify-content: center;
     }
 }
+
