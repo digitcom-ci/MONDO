@@ -93,7 +93,7 @@ header {
     content: "";
     position: absolute;
     width: 23px;
-    height: 2px;
+    height: 3px;
     background: #C22E38;
     transition: 0.3s ease-in-out;
 }
@@ -121,9 +121,9 @@ header {
 }
 /* Bouton de réservation */
 .btn-reservation {
-    background: #25A63C;
+    background: #FFF;
     border: 1px solid #25A63C;
-    color: #fff;
+    color: #25A63C;
     padding: 10px 45px;
     border-radius: 5px;
     text-decoration: none;
@@ -132,8 +132,8 @@ header {
     white-space: nowrap; /* Empêche Mondo et Pizza de passer à la ligne */
 }
 .btn-reservation:hover {
-    background: #fff;
-    color: #25A63C;
+    background: #25A63C;
+    color: #FFF;
     border: 1px solid #25A63C;
 }
 /* Section Hero */
@@ -176,12 +176,12 @@ header {
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .logo img {
-        width: 40%;
+        width: 50%;
         height: auto;
         margin-left: 10px;
     }
     header {
-    padding: 5px 20px;
+    padding: 8px 20px;
     }
     .nav-links {
         display: flex;
@@ -229,8 +229,8 @@ header {
     }
     /* Bouton de réservation */
     .btn-reservation {
-        background: #25A63C;
-        color: #fff;
+        background: #FFF;
+        color: #25A63C;
         border: 1px solid #25A63C;
         padding: 7px 20px;
         text-decoration: none;
@@ -238,15 +238,15 @@ header {
         transition: 0.3s;
     }
     .btn-reservation:hover {
-        background: #fff;
-        color: #25A63C;
+        background: #25A63C;
+        color: #FFF;
         border: 1px solid #25A63C;
     }
 
     /* Section Hero */
     .hero {
         width: 100%;
-        height: 40vh;
+        height: auto;
         background: url('images/covermini.png') center/cover no-repeat;
         display: flex;
         flex-direction: column;
@@ -465,12 +465,12 @@ header {
 @media (max-width: 768px) {
     /* === Section spécialités mobile === */
     .specialties {
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         background: #fffdf7; /* blanc cassé */
     }
     .specialties-content .logo-special {
-        max-width: 250px;
+        max-width: 350px;
         margin-bottom: 15px;
     }
     .specialties p {
@@ -741,7 +741,6 @@ header {
 .reviews {
     text-align: center;
     padding: 50px 20px;
-    background: #f8f8f8;
 }
 /* Conteneur des avis avec scroll */
 .reviews-container {
