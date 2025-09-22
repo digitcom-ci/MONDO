@@ -488,17 +488,14 @@ header {
     /* === Carte pizza cliquable === */
     .card {
         display: flex;
-        flex-direction: row; /* image gauche / texte droite */
+        flex-direction: row;
         align-items: center;
         background-color: #fff;
         border-radius: 12px;
         overflow: hidden;
-        width: 400px; /* largeur max */
+        width: 100%; /* occupe toute la largeur */
+        max-width: 100%; /* empêche de dépasser */
         box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.3s, box-shadow 0.3s;
-        cursor: pointer;
         margin: auto;
     }
     .card:hover {
