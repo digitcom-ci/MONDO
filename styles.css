@@ -465,7 +465,7 @@ header {
 @media (max-width: 768px) {
     /* === Section spécialités mobile === */
     .specialties {
-        padding: 10px;
+        padding: 0px;
         text-align: center;
     }
     .specialties-content .logo-special {
@@ -479,7 +479,8 @@ header {
     }
     /* === Conteneur des cartes === */
     .specialty-items {
-        width: 400px;
+        margin-left: -20px;
+        width: 450px;
         display: grid;
         grid-template-columns: 1fr; /* 1 carte par ligne sur mobile */
         gap: 10px;
@@ -583,10 +584,8 @@ header {
 }
 /* Responsive pour mobile */
 @media (max-width: 768px) {
-    .image-container img {
-        width: 40%; /* une image par ligne */
-        height: auto;
-        margin: auto;
+    .image-row {
+        display: none;
     }
 }
 
@@ -675,12 +674,12 @@ header {
     .delivery-left ul {
         list-style: none;
         padding: 0;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 2;
         color: #555;
     }
     .delivery-left ul li {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
         gap: 12px;
