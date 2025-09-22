@@ -560,7 +560,7 @@ header {
 
 .image-row {
     background-color: #f8f5f0; /* blanc cassé */
-    padding: 40px 10%;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
@@ -657,7 +657,7 @@ header {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .delivery-section {
         flex-direction: column;
         text-align: center;
