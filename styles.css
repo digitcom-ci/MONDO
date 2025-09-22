@@ -704,7 +704,7 @@ header {
     }
     /* Texte et bouton à droite */
     .delivery-right {
-        margin-top: -250px;
+        margin-top: -200px;
     }
     .delivery-right h2 {
         font-size: 26px;
@@ -790,53 +790,6 @@ header {
 }
 /* Responsive pour tablette (2 avis par ligne) */
 @media (min-width: 600px) and (max-width: 1024px) {
-    /* === Section avis clients - Mobile === */
-
-    /* Section avis client */
-    .reviews {
-        text-align: center;
-        padding: 20px 20px;
-        background: #f8f8f8;
-    }
-
-    /* Conteneur des avis avec scroll */
-    .reviews-container {
-        display: block;
-        gap: 20px;
-        overflow-x: auto; /* Scroll horizontal */
-        scroll-snap-type: x mandatory;
-        padding-bottom: 10px;
-    }
-
-    /* Style des cartes */
-    .review-card {
-        flex: 0 0 300px; /* Taille fixe des cartes */
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        scroll-snap-align: center;
-        text-align: left;
-    }
-
-    /* Style du texte */
-    .review-card p {
-        font-size: 16px;
-        font-style: italic;
-        margin-bottom: 10px;
-    }
-
-    .review-card h4 {
-        text-align: right;
-        font-size: 14px;
-        font-weight: bold;
-        color: #2A327B;
-    }
-
-    .reviews h2 {
-        margin-bottom: 20px;
-        color: #2A327B;
-    }
 
     /* Supprimer la barre de scroll sur les navigateurs */
     .reviews-container::-webkit-scrollbar {
