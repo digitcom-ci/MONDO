@@ -1,77 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Club | Menu</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Menu Pizzeria</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;padding:0;background:#fafafa;}
+    header{padding:20px;text-align:center;background:#d32f2f;color:#fff;}
+    .btn-carte{margin:20px auto;display:block;padding:10px 20px;background:#333;color:#fff;
+      border:none;cursor:pointer;border-radius:4px;}
+    #image-carte{display:none;text-align:center;margin:20px;}
+    #image-carte img{max-width:90%;border:2px solid #ccc;border-radius:6px;}
+
+    /* Barre nav catégories */
+    .categories{display:flex;justify-content:center;gap:20px;background:#eee;padding:10px;}
+    .categories button{background:none;border:none;padding:10px;font-size:16px;cursor:pointer;}
+    .categories button.active{border-bottom:3px solid #d32f2f;color:#d32f2f;font-weight:bold;}
+
+    /* Sections menus */
+    .menu-section{display:none;flex-wrap:nowrap;overflow-x:auto;gap:20px;padding:20px;}
+    .card{min-width:220px;background:#fff;border:1px solid #ddd;border-radius:6px;
+      padding:15px;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    .card img{max-width:100%;border-radius:6px;}
+    .card h3{margin:10px 0;}
+    .btn-add{margin-top:10px;padding:6px 12px;background:#d32f2f;color:#fff;border:none;
+      border-radius:4px;cursor:pointer;}
+  </style>
 </head>
 <body>
-    <header>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-        </div>
+  <header>
+    <h1>Menu de la Pizzeria</h1>
+  </header>
 
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo du restaurant" class="logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="reservation.html">Réservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="reservation.html" class="btn-reservation">Réserver</a>
-    </header>
+  <!-- Bouton Voir la carte -->
+  <button class="btn-carte" onclick="toggleCarte()">Voir la carte</button>
+  <div id="image-carte">
+    <img src="carte.jpg" alt="Carte de la pizzeria">
+  </div>
 
-    <section class="equipe">
-        <h2>De quoi ravir vos papilles</h2>
-        <h2>Menu unique</h2>
-        <h3><strong>la mer en folie</strong></h3>
-        <p>Variétés de crustacés et de poissons de mer au gré de la marée</p>
-        <div class="equipe-container">
-            <div class="card">
-                <img src="images/plat1.JPG" alt="Directeur">
-            </div>
-            <div class="card">
-                <img src="images/plat2.JPG" alt="Manager">
-            </div>
-            <div class="card">
-                <img src="images/plat.JPG" alt="Chef">
-            </div>
-        </div>
-        <h3><strong>Boissons</strong></h3>
-        <i>A côté des valeurs immuables ,la Case de Bacchus vous partage ses découvertes du jour</i>
-        <br>
-        <br>
-        <br>
-        <h3><strong>Détente</strong></h3>
-        <p>Piscine pour les grands et les petits , farniente sur nos transats au son du roulement des vagues.</p>
-        <p>Ping pong</p>
-        <p>Pétanques</p>
-        <p>Beach volley</p>
-        <p>Jeux de societé</p>
-        <p>Bibliothèque nomade</p>
-        <br>
-        <h3><strong>Baignade en mer dangereuse</strong></h3>
-        <h3><strong>Possibilité privatisation</strong></h3>      
-    </section>
-    
+  <!-- Barre Catégories -->
+  <div class="categories">
+    <button onclick="showSection('pizza')" class="active">🍕 Pizza</button>
+    <button onclick="showSection('sucreries')">🍩 Sucreries</button>
+    <button onclick="showSection('biere')">🍺 Bière</button>
+  </div>
 
-    <section class="reservation">
-        <h2>Réservez votre table</h2>
-        <a href="reservation.html" class="btn">Réserver maintenant</a>
-    </section>
+  <!-- Section Pizza -->
+  <div id="pizza" class="menu-section" style="display:flex;">
+    <div class="card">
+      <img src="pizza1.jpg" alt="Pizza Margherita">
+      <h3>Pizza Margherita</h3>
+      <p>Tomate, Mozzarella, Basilic</p>
+      <p><strong>4000 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+    <div class="card">
+      <img src="pizza2.jpg" alt="Pizza Pepperoni">
+      <h3>Pepperoni</h3>
+      <p>Tomate, Mozzarella, Pepperoni</p>
+      <p><strong>5000 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+  </div>
 
-    <footer>
-        <p class="copyright">© 2025 Le Club. Tous droits réservés.</p>
-    </footer>
+  <!-- Section Sucreries -->
+  <div id="sucreries" class="menu-section">
+    <div class="card">
+      <img src="donut.jpg" alt="Donut">
+      <h3>Donut Chocolat</h3>
+      <p>Chocolat fondant</p>
+      <p><strong>1500 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+    <div class="card">
+      <img src="glace.jpg" alt="Glace">
+      <h3>Glace Vanille</h3>
+      <p>Vanille naturelle</p>
+      <p><strong>2000 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+  </div>
+
+  <!-- Section Bières -->
+  <div id="biere" class="menu-section">
+    <div class="card">
+      <img src="beer.jpg" alt="Bière blonde">
+      <h3>Bière Blonde</h3>
+      <p>Fraîche et légère</p>
+      <p><strong>2500 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+    <div class="card">
+      <img src="beer2.jpg" alt="Bière brune">
+      <h3>Bière Brune</h3>
+      <p>Arôme intense</p>
+      <p><strong>3000 FCFA</strong></p>
+      <button class="btn-add">+</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleCarte(){
+      const carte = document.getElementById("image-carte");
+      carte.style.display = (carte.style.display==="none"||carte.style.display==="") ? "block":"none";
+    }
+
+    function showSection(id){
+      document.querySelectorAll(".menu-section").forEach(sec=>sec.style.display="none");
+      document.querySelectorAll(".categories button").forEach(btn=>btn.classList.remove("active"));
+      document.getElementById(id).style.display="flex";
+      event.target.classList.add("active");
+    }
+  </script>
 </body>
 </html>
