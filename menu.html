@@ -80,19 +80,5 @@
       <button class="btn-add">+</button>
     </div>
   </div>
-
-  <script>
-    function toggleCarte(){
-      const carte = document.getElementById("image-carte");
-      carte.style.display = (carte.style.display==="none"||carte.style.display==="") ? "block":"none";
-    }
-
-    function showSection(id){
-      document.querySelectorAll(".menu-section").forEach(sec=>sec.style.display="none");
-      document.querySelectorAll(".categories button").forEach(btn=>btn.classList.remove("active"));
-      document.getElementById(id).style.display="flex";
-      event.target.classList.add("active");
-    }
-  </script>
 </body>
 </html>
